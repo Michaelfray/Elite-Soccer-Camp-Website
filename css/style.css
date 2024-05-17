@@ -197,6 +197,13 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
 .navbar a {
   font-size: 18px;
   color: var(--text-color);
@@ -206,29 +213,10 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-.navbar .signup-btn {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: var(--main-second-color);
-  border: solid 1px var(--main-second-color);
-  border-radius: 1rem;
-  font-size: 1.6rem;
-  color: var(--bg-color);
-  letter-spacing: 0.1rem;
-  font-weight: 600;
-  transition: all 300ms ease-in-out;
-}
-
-.navbar .signup-btn:hover {
-  background: transparent;
-  border-color: var(--text-color);
-  transition: all 300ms ease-in-out;
-  color: var(--text-color);
-}
-
 .navbar a:hover,
 .navbar a.active {
   color: var(--main-color);
+  text-decoration: underline;
 }
 
 .home {
@@ -243,14 +231,14 @@ body {
 .home-img-slider {
   position: relative;
   width: 50%;
-  height: 100vh;
+  height: 60vh;
   overflow: hidden;
+  border-radius: 30px;
 }
 
 .home-img-slider img {
-  border-radius: 10px;
   width: 41vw;
-  height: 790px;
+  height: 700px;
 }
 
 .slider-img {
@@ -325,9 +313,9 @@ span {
 }
 
 .about-img img {
-  width: 30vw;
-  height: 55vh;
-  border-radius: 10px;
+  width: 25vw;
+  height: 50vh;
+  border-radius: 30px;
 }
 
 .heading {

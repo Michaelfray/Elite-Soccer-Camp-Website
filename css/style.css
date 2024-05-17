@@ -597,29 +597,38 @@ ul li a:hover {
   .home-content h1 {
     font-size: 5rem;
   }
-  .home-img-slider {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-
   .logo {
     margin-left: 20px;
   }
+  .home {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+    transition: all 300ms ease-in-out;
+    background: var(--bg-color);
+  }
+  .home-img-slider {
+    position: relative;
+    width: 90vw;
+    height: 45vh;
+    overflow: hidden;
+    border-radius: 30px;
+  }
 
   .home-img-slider img {
-    border-radius: 10px;
-    margin-top: 20px;
-    width: 90vw;
-    height: 790px;
+    width: 100vw;
+    height: 400px;
   }
   .about {
     flex-direction: column;
   }
   .about img {
-    width: 90vw;
-    margin-right: 30px;
+    width: 90%;
+    height: 30vh;
+    margin-left: 4%;
   }
   .services h2 {
     margin-bottom: 3rem;
@@ -691,7 +700,7 @@ ul li a:hover {
     position: relative;
     font-family: "Playfair Display", serif;
   }
-  
+
   .letter,
   .bounce-letter {
     display: inline-block;
@@ -704,13 +713,13 @@ ul li a:hover {
     position: relative;
     z-index: 0;
   }
-  
+
   .center-text {
     background-color: white;
     z-index: 1;
     animation: appearFromBottom 6s forwards;
   }
-  
+
   .vertical-line-between {
     align-items: center;
     position: absolute;
@@ -720,20 +729,20 @@ ul li a:hover {
     background-color: #000;
     z-index: 1;
   }
-  
+
   #letterE,
   #letterS {
     font-size: 35px;
     font-family: "Playfair Display", serif;
     z-index: 0;
   }
-  
+
   #letterE {
     font-family: "Playfair Display", serif;
     animation-delay: 0.5s;
     margin-right: -45px;
   }
-  
+
   #letterS {
     animation-delay: 1s;
     margin-left: -45px;
